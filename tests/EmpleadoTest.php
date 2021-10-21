@@ -2,13 +2,7 @@
 
 abstract class EmpleadoTest extends \PHPUnit\Framework\TestCase {
  
-    /*public function crear($nombre = "Esteban", $apellido = "Quito", $dni = 12345678, $salario = 123456, $fecha = null)
 
-    {
-       $ee = new \App\EmpleadoPermanente($nombre, $apellido, $dni, $salario, $fecha);
-       return $ee;
-    }
-*/
     public function testgetNombreApellido()
     {
         $ee = $this->crear("Luciano", "Campos");
@@ -46,8 +40,8 @@ abstract class EmpleadoTest extends \PHPUnit\Framework\TestCase {
     
     public function testgetSalario()
     {
-        $ee = $this->crear(100);
-        $this->assertEquals(100, $ee->getSalario());
+        $ee = $this->crear(40000);
+        $this->assertEquals(40000, $ee->getSalario());
     }
 
     public function testgetSalarioVacio()
