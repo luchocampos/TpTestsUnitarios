@@ -40,7 +40,7 @@ class EmpleadoPermanenteTest extends EmpleadoTest {
        $fechaActual = new DateTime();
        $antiguedad = $fechaActual->diff($fechaIngreso);
        $this->assertEquals($antiguedad->y, $ep->calcularAntiguedad());
-       $this->assertEquals("10%", $ep->calcularComision());
+       $this->assertEquals("0%", $ep->calcularComision());
      }
 
        public function testAntiguedadFechaFutura()
